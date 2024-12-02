@@ -17,37 +17,48 @@ This project will be completed in phases. The first phase will be to work on thi
 
 ## Phase 0: Selection, Analysis & Plan
 
-#### Selected Project: CHOOSE WISELY
+#### Selected Project: SPACE INVADERS
 
 ### Necessary Features
 What are the core features that your program should have? These should be things that __must__ be implemented in order to make the program useable/playable, not extra features that could be added to make the program more interesting/fun.
 
-YOUR ANSWERS HERE
+ALIENS
+ALIEN PROJECTILES
+SCORE
+PLAYER GUN
+PLAYER GUN PROJECTILES
 
 ### Extra Features
 What are some features that are not essential to the program, but you would like to see (provided you have time after completing the necessary features. Theses can be customizations that are not part of the core requirements.
 
-YOUR ANSWERS HERE
+HOUSES
+DIFFERENT ALIEN TYPES
+DIFFERENT ALIEN PROJECTILE TYPES
+MULTIPLE LIVES FOR PLAYER
+SPECIAL SHIP (EXTRA POINTS)
 
 ### Array Usage
 How will you be using arrays in this project?
 
 1D Array:
-- YOUR ANSER HERE
+- HOUSES
 
 2D Array:
-- YOUR ANSWER HERE
+- ALIENS
 
 
 ### Controls
 How will your program be controlled? List all keyboard commands and mouse interactions.
 
 Keyboard Commands:
-- LIST OF COMMANDS HERE
+- LEFT ARROW = MOVE LEFT
+- RIGHT ARROW = MOVE RIGHT
+- SPACE = SHOOT
+- R = RESET?
 
 Mouse Control:
-- Mouse movement:
-- Mouse pressed:
+- Mouse movement: NONE
+- Mouse pressed: NONE
 
 
 ### Classes
