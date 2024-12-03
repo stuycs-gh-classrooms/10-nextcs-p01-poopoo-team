@@ -85,13 +85,13 @@ CLASS brick
   - int x, y
 - METHODS
   - brick()
+  - void display()
 
 CLASS player
 - Instance variables:
   - int x
 - METHODS
   - player()
-  - void move()
   - void display()
   - void shoot()
 
@@ -110,6 +110,7 @@ CLASS aliens
   - alien[][] aliens
   - int speed
 - METHODS
+  - aliens()
   - void move()
   - void display()
  
@@ -118,7 +119,7 @@ CLASS alienProj
   - int x, y
   - int speed
 - METHODS
-  - proj()
+  - alienProj()
   - void hitPlayer()
   - void hitBrick()
   - void move()
@@ -129,7 +130,7 @@ CLASS playerProj
   - int x, y
   - int speed
 - METHODS
-  - proj()
+  - playerProj()
   - void hit()
   - void move()
   - void display()
