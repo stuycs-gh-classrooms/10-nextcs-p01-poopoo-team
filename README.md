@@ -23,18 +23,26 @@ This project will be completed in phases. The first phase will be to work on thi
 What are the core features that your program should have? These should be things that __must__ be implemented in order to make the program useable/playable, not extra features that could be added to make the program more interesting/fun.
 
 ALIENS
+
 ALIEN PROJECTILES
+
 SCORE
+
 PLAYER GUN
+
 PLAYER GUN PROJECTILES
 
 ### Extra Features
 What are some features that are not essential to the program, but you would like to see (provided you have time after completing the necessary features. Theses can be customizations that are not part of the core requirements.
 
 HOUSES
+
 DIFFERENT ALIEN TYPES
+
 DIFFERENT ALIEN PROJECTILE TYPES
+
 MULTIPLE LIVES FOR PLAYER
+
 SPECIAL SHIP (EXTRA POINTS)
 
 ### Array Usage
@@ -64,14 +72,64 @@ Mouse Control:
 ### Classes
 What classes will you be creating for this project? Include the instance variables and methods that you believe you will need. You will be required to create at least 2 different classes. If you are going to use classes similar to those we've made for previous assignments, you will have to add new features to them.
 
-CLASS NAME0
+CLASS house
 - Instance variables:
-  - LIST INSTANCE VARS HERE
+  - brick[][]
 - METHODS
-  - LIST METHODS HERE
+  - house()
+  - void display()
+ 
+CLASS brick
+- Instance variables:
+  - int condition
+  - int x, y
+- METHODS
+  - brick()
 
-CLASS NAME1
+CLASS player
 - Instance variables:
-  - LIST INSTANCE VARS HERE
+  - int x
 - METHODS
-  - LIST METHODS HERE
+  - player()
+  - void move()
+  - void display()
+  - void shoot()
+
+CLASS alien
+- Instance variables:
+  - PVector pos
+  - int points
+  - int shootChance
+- METHODS
+  - alien()
+  - void shoot()
+  - void display()
+
+CLASS aliens
+- Instance variables:
+  - alien[][] aliens
+  - int speed
+- METHODS
+  - void move()
+  - void display()
+ 
+CLASS alienProj
+- Instance variables:
+  - int x, y
+  - int speed
+- METHODS
+  - proj()
+  - void hitPlayer()
+  - void hitBrick()
+  - void move()
+  - void display()
+ 
+CLASS playerProj
+- Instance variables:
+  - int x, y
+  - int speed
+- METHODS
+  - proj()
+  - void hit()
+  - void move()
+  - void display()
