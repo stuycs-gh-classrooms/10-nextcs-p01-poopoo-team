@@ -2,10 +2,10 @@ class alienProj {
   int x, y;
   int speed;
   
-  alienProj(int ix, int iy, int v) {
+  alienProj(int ix, int iy) {
     x = ix;
     y = iy;
-    speed = v;
+    speed = level ;
   }
   
   void hitPlayer() {

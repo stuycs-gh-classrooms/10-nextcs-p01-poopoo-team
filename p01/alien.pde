@@ -1,8 +1,9 @@
 class alien {
   int x, y;
   int points;
-  int shootChance;
+  float shootChance;
   int level;
+  alienProj bullet;
   
   alien(int ix, int iy, int p, int l) {
     x = ix;
@@ -13,7 +14,9 @@ class alien {
   }
   
   void shoot() {
-    
+    if (bullet != null && shootChance < random(100)) {
+      bullet = new alienProj(x, y, );
+    }
   }
   
   void display() {
