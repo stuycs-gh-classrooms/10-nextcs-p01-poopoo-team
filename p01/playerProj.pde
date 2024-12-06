@@ -2,8 +2,10 @@ class playerProj {
   int x, y;
   int speed;
   
-  playerProj() {
-    
+  playerProj(int ix, int iy) {
+    x = ix;
+    y = iy;
+    speed = -20;
   }
   
   void hitAlien() {
@@ -15,7 +17,7 @@ class playerProj {
   }
   
   void move() {
-  
+    y += speed;
   }
   
   void display() {

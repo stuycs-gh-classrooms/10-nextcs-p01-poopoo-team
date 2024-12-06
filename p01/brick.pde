@@ -1,8 +1,8 @@
-class brick 
+class brick
 {
   // instance variable
   int condition;
-  int bx, by;
+  int bx, by, bcx, bcy;
   int bsize;
   color c;
 
@@ -10,16 +10,22 @@ class brick
   {
     bx = x;
     by = y;
+    bcx = (x + x + s)/2;
+    bcy = (y + y + s)/2;
     bsize = s;
     condition = 3;
   } // constructor
  
-  boolean hitCheck(Brick other) {
-    if (condition == 0) {
-      return (false);
+  boolean hitCheck(alienProj a) {
+    return ((condition != 0) &&
+    (dist (this.bcx, this.by, a.x, a.y)
+    <= (this.bsize/2 + a.size/2)));
+  }
+  
+  void updateCondition() {
+    if (hitCheck()) {
+      condition = condition - 1;
     }
-    return ();
-   
   }
  
   void setColor (color newC)
@@ -33,8 +39,7 @@ class brick
     square(bx, by, bsize);
    
   } //display()
-}
-
+} 
 /*
 - Instance variables:
   - int condition

@@ -5,17 +5,16 @@ class alien {
   int level;
   alienProj bullet;
   
-  alien(int ix, int iy, int p, int l) {
+  alien(int ix, int iy, int p) {
     x = ix;
     y = iy;
     points = p;
     shootChance = 0;
-    level = l;
   }
   
   void shoot() {
     if (bullet != null && shootChance < random(100)) {
-      bullet = new alienProj(x, y, );
+      bullet = new alienProj(x, y);
     }
   }
   

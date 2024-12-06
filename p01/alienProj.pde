@@ -5,7 +5,7 @@ class alienProj {
   alienProj(int ix, int iy) {
     x = ix;
     y = iy;
-    speed = level ;
+    speed = 16 + 6 * level;
   }
   
   void hitPlayer() {
@@ -17,7 +17,7 @@ class alienProj {
   }
   
   void move () {
-    
+    y += speed;
   }
   
   void display() {

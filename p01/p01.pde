@@ -4,7 +4,7 @@ house[] hood;
 
 int lives;
 int level;
-boolean pause;
+boolean playing;
 
 void setup() {
   size(500, 750);
@@ -13,18 +13,18 @@ void setup() {
   lives = 3;
   hood = new house[4];
   level = 0;
-  pause = false;
+  playing = false;
 }
 
 void draw() {
-  if (!pause) {
-    
+  if (playing) {
+    background(0);
   }
 }
 
 void keyPressed() {
-  if (keyCode == ESC) {pause = !pause;}
-  else if (!pause) {
+  if (keyCode == ESC) {playing = !playing;}
+  else if (playing) {
     if (keyCode == LEFT) {you.x -= 1;}
     else if (keyCode == RIGHT) {you.x -= 1;}
     else if (key == ' ') {you.shoot();}
