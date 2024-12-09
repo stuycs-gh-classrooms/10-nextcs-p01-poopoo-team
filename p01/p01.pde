@@ -1,6 +1,6 @@
-player you;
-aliens them;
-house[] hood;
+Player you;
+Aliens them;
+House[] hood;
 
 int lives;
 int level;
@@ -8,10 +8,10 @@ boolean playing;
 
 void setup() {
   size(500, 750);
-  you = new player();
-  them = new aliens(5, 8);
+  you = new Player();
+  them = new Aliens(5, 8);
   lives = 3;
-  hood = new house[4];
+  hood = new House[4];
   level = 0;
   playing = false;
 }
@@ -33,8 +33,8 @@ void keyPressed() {
 }
 
 void reset() {
-  you = new player();
-  them = new aliens(5, 8);
+  you = new Player();
+  them = new Aliens(5, 8);
   lives = 3;
   
 }

@@ -1,7 +1,7 @@
-class house {
+class House {
   brick[][] home;
   
-  house() {
+  House() {
     home = new brick[2][4];
   }
   

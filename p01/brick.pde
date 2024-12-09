@@ -1,4 +1,4 @@
-class brick
+class Brick
 {
   // instance variable
   int condition;
@@ -6,7 +6,7 @@ class brick
   int bsize;
   color c;
 
-  brick(int x, int y, int s)
+  Brick(int x, int y, int s)
   {
     bx = x;
     by = y;
@@ -45,6 +45,6 @@ class brick
   - int condition
   - int x, y
 - METHODS
-  - brick()
+  - Brick()
   - void display()
 */

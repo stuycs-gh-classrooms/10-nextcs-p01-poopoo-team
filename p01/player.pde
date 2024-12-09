@@ -1,14 +1,18 @@
-class player {
+class Player {
   int x;
-  playerProj bullet;
+  int y = 500;
+  PlayerProj[] bullets;
   
-  player() {
+  Player() {
     x = width/2;
+    bullets = new PlayerProj[5];
   }
   
   void shoot() {
-    if (bullet != null) {
-      bullet = new playerProj(x, y);
+    for (int i = 0; i < bullets.length; i++) {
+      if (bullets[i] != null) {
+        bullets[i] = new PlayerProj(x, y);
+      }
     }
   }
   

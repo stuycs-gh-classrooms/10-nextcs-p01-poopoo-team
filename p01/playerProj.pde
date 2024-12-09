@@ -1,8 +1,8 @@
-class playerProj {
+class PlayerProj {
   int x, y;
   int speed;
   
-  playerProj(int ix, int iy) {
+  PlayerProj(int ix, int iy) {
     x = ix;
     y = iy;
     speed = -20;

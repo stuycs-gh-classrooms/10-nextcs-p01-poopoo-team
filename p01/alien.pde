@@ -1,11 +1,11 @@
-class alien {
+class Alien {
   int x, y;
   int points;
   float shootChance;
   int level;
-  alienProj bullet;
+  AlienProj bullet;
   
-  alien(int ix, int iy, int p) {
+  Alien(int ix, int iy, int p) {
     x = ix;
     y = iy;
     points = p;
@@ -14,7 +14,7 @@ class alien {
   
   void shoot() {
     if (bullet != null && shootChance < random(100)) {
-      bullet = new alienProj(x, y);
+      bullet = new AlienProj(x, y);
     }
   }
   
